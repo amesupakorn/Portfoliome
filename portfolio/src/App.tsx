@@ -1,15 +1,16 @@
 import './App.css';
-import NavBar from './nav/nav.tsx';
+import Navbar from './components/nav/nav.tsx';
+import Home from './components/home/home.tsx';
+import About from './components/about/about.tsx';
 
 
 export default function App() {
 
   return (
     <div>
-      <NavBar />
-        <main className="p-4">
-          <h1 className="text-2xl font-bold">Welcome to My Website</h1>
-        </main>
+      <Navbar />
+      <Home />
+      <About />
     </div>
   )
 }
