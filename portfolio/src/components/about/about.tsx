@@ -10,7 +10,7 @@ const About = () => {
         <div className="flex justify-center items-center relative">
         <div className="rounded-full overflow-hidden border-4 border-gray-700 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px]">
         <img
-              src="../../../public/1714321212704.jpg"
+              src="/1714321212704.jpg"
               alt="Profile"
               className="object-cover w-full h-full"
             />
@@ -18,25 +18,25 @@ const About = () => {
 
           <div className="absolute top-[10%] left-[-5%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
             <img
-                src="../../../public/Python-logo-notext.svg.png"
+                src="/Python-logo-notext.svg.png"
                 className="w-[34px] h-[36px]"
                 />
           </div>
           <div className="absolute top-[5%] right-[8%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
             <img
-                src="../../../public/Postgresql_elephant.svg.png"
+                src="/Postgresql_elephant.svg.png"
                 className="w-[24px] h-[24px]"
                 />
           </div>
           <div className="absolute bottom-[15%] left-[5%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
             <img
-              src="../../../public/97_Docker_logo_logos-512.webp"
+              src="/97_Docker_logo_logos-512.webp"
               className="w-[24px] h-[24px]"
             />
           </div>
           <div className="absolute bottom-[15%] right-[5%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
             <img
-              src="../../../public/React-icon.svg.png"
+              src="/React-icon.svg.png"
               className="w-[28px] h-[24px]"
             />
           </div>

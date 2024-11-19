@@ -82,9 +82,10 @@ const Navbar = () => {
             {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
           <ul
-              className={`fixed top-0 h-full w-[50%] border-r border-r-gray-900 bg-[#000300] transform transition-transform duration-500 ease-in-out ${
-                nav ? '-translate-x-5' : '-translate-x-full'
-              }`}
+             className={`fixed top-0 h-full w-[50%] border-r border-r-gray-900 bg-[#000300] transform transition-transform duration-500 ease-in-out ${
+              nav ? '-translate-x-4' : '-translate-x-[80vw]'
+            }`}
+            
           >
             <h1 className="w-full text-2xl font-bold text-blue-500 m-4">SUPAKORN.</h1>
             <li className="p-4 cursor-pointer hover:text-blue-500 transition">
