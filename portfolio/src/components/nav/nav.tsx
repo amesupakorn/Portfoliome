@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
