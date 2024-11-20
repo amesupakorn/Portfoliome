@@ -30,13 +30,13 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="p-4 cursor-pointer hover:text-blue-500 transition">
-        <Link to="what-i-do" smooth={true} duration={500}>
-          What I do
+        <Link to="skill" smooth={true} duration={500}>
+          My Skills
         </Link>
       </li>
       <li className="p-4 cursor-pointer hover:text-blue-500 transition">
         <Link to="portfolio" smooth={true} duration={500}>
-          Portfolio
+          What I do
         </Link>
       </li>
       <div className="flex items-center space-x-4">
