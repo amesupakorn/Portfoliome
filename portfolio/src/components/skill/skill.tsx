@@ -18,8 +18,10 @@ const Skill = () => {
       
         { name: "TypeScript", icon: "/logo/typescript.png", description: "Interaction" },
         { name: "Java", icon: "/logo/java.png", description: "App Development" },
+        
+        { name: "Docker", icon: "/logo/docker.jpg", description: "Containerization" },
+        { name: "Jenkins", icon: "/logo/jenkins.png", description: "CI/CD Automation" },
       
-        // Design Tool
         { name: "Figma", icon: "/logo/figma.png", description: "Design tool" },
       ];
       

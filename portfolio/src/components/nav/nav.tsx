@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-  <div className="sticky top-0 z-50 bg-[#0e0e0e] w-full transition-colors duration-500">
+  <div className="sticky top-0 z-50 bg-[#0e0e0e] opacity-95 w-full transition-colors duration-500">
 
   <div className="max-w-[1200px] mx-auto flex justify-between items-center h-20 px-4 text-white">
     <h1 className="w-full text-3xl font-bold text-blue-500">SUPAKORN.</h1>
@@ -35,7 +35,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="p-4 cursor-pointer hover:text-blue-500 transition">
-        <Link to="portfolio" smooth={true} duration={500}>
+        <Link to="work" smooth={true} duration={500}>
           What I do
         </Link>
       </li>
