@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from 'typed.js';
+import { Link } from 'react-scroll';
 
 
 const Home = () => {
@@ -55,7 +56,9 @@ const Home = () => {
             View Resume
           </button>
           <button className="w-[200px] rounded-md font-medium py-3 border border-white hover:bg-white hover:text-black transition duration-300">
-            My Work
+            <Link to="work" smooth={true} duration={500}>
+              My Work
+            </Link>
           </button>
         </div>
       </div>
