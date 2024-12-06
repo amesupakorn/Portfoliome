@@ -19,7 +19,7 @@ const Skill = () => {
     { name: "Prisma", icon: "/logo/prisma.png", description: "Database ORM" },
 
     { name: "CSS", icon: "/logo/css.png", description: "User Interface" },
-    { name: "Tailwind", icon: "/logo/tailwind.png", description: "User Interface" },
+    { name: "TailwindCSS", icon: "/logo/tailwind.png", description: "User Interface" },
     { name: "Bootstrap", icon: "/logo/bootstrap.png", description: "User Interface" },
 
     { name: "Docker", icon: "/logo/docker.jpg", description: "Containerization" },

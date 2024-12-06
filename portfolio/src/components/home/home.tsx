@@ -55,11 +55,13 @@ const Home = () => {
           <button className="bg-white w-[200px] rounded-md font-medium py-3 text-black border border-white hover:text-white hover:bg-black transition duration-300">
             View Resume
           </button>
+          <Link to="work" smooth={true} duration={500}>
           <button className="w-[200px] rounded-md font-medium py-3 border border-white hover:bg-white hover:text-black transition duration-300">
-            <Link to="work" smooth={true} duration={500}>
+            
               My Work
-            </Link>
+
           </button>
+          </Link>
         </div>
       </div>
     </div>

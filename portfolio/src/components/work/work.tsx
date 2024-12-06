@@ -9,19 +9,19 @@ const Work = () => {
         "Website Development for Audio Streaming Systems on Amazon Web Services (AWS)",
       link: "https://github.com/amesupakorn/TM_Teammusic",
       image: "/work/tm.png",
-      tags: ["Django", "Tailwind", "Amazon Web Services", "PostgreSQL"],
-      rowSpan: "row-span-2",
+      tags: ["Django", "TailwindCSS", "Amazon Web Services", "PostgreSQL"],
+      rowSpan: "row-span-1",
     },
     {
       id: 2,
       title: "WellCareConnect",
       description:
-        "Chatbot Solutions for Preliminary Disease Assessment and Health Guidance",
+        "Chatbot Solutions for Preliminary Disease Assessment and Health Guidance powered by Google Cloud for scalable infrastructure. Docker containers streamline deployment, while Jenkins automates continuous integration and delivery, maintaining platform stability.",
       link: "https://github.com/amesupakorn/WellCareConnect",
-      image: "/work/wellcare.png",
+      image: "/work/group2.png",
       tags: [
         "Django",
-        "Tailwind",
+        "TailwindCSS",
         "Dialogflow",
         "Google Cloud",
         "Docker",
@@ -32,12 +32,12 @@ const Work = () => {
     },
     {
       id: 3,
-      title: "HyGeas Hotel",
+      title: "SuKaPab",
       description:
-        "A comprehensive hotel management system integrating frontend guest experience and backend hotel operations.",
-      link: "https://github.com/amesupakorn/HYGEAS_HOTEL-web-",
-      image: "/work/hygeas.png",
-      tags: ["PHP", "Bootstrap", "DBeaver"],
+        "A one-stop e-commerce platform offering high-quality health products, from supplements to fitness gear, designed to support your journey to a healthier lifestyle with ease and confidence.",
+      link: "https://github.com/amesupakorn/Talad-Sukkapab",
+      image: "/work/group5.png",
+      tags: ["React", "NodeJS", "Prisma", "TailwindCSS", "PostgreSQL"],
       rowSpan: "row-span-1",
     },
     {
@@ -46,10 +46,22 @@ const Work = () => {
       description:
         "An all-in-one restaurant management website that integrates backend kitchen operations and frontend customer-facing solutions.",
       link: "https://github.com/amesupakorn/OhYummy",
-      image: "/work/ohyum.png",
-      tags: ["PHP", "Bootstrap", "DBeaver"],
-      rowSpan: "row-span-3",
+      image: "/work/group4.png",
+      tags: ["PHP", "Bootstrap", "MariaDB"],
+      rowSpan: "row-span-1",
     },
+    {
+      id: 5,
+      title: "HyGeas Hotel",
+      description:
+        "A comprehensive hotel management system integrating frontend guest experience and backend hotel operations.",
+      link: "https://github.com/amesupakorn/HYGEAS_HOTEL-web-",
+      image: "/work/hygeas.png",
+      tags: ["PHP", "Bootstrap", "DBeaver"],
+      rowSpan: "row-span-1",
+    },
+    
+
   ];
 
   const [isLoading, setIsLoading] = useState(true);
