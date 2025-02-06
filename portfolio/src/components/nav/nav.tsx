@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
