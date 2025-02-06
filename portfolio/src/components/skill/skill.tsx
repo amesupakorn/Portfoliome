@@ -8,10 +8,12 @@ const Skill = () => {
 
     { name: "React", icon: "/logo/react.png", description: "Frontend Framework" },
     { name: "NodeJS", icon: "/logo/nodejs.webp", description: "Backend Framework" },
+    { name: "NextJS", icon: "/logo/nextjs,png", description: "Full Stack Framework" },
+    { name: "Django", icon: "/logo/django.jpg", description: "Full Stack Framework" },
 
     { name: "Python", icon: "/logo/python.png", description: "Web Development" },
     { name: "PHP", icon: "/logo/php.jpeg", description: "Web Development" },
-    { name: "Django", icon: "/logo/django.jpg", description: "Web Development" },
+
     { name: "Java", icon: "/logo/java.png", description: "App Development" },
 
     { name: "PostgreSQL", icon: "/logo/postgresql.png", description: "Database" },
