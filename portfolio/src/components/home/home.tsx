@@ -2,6 +2,9 @@ import { useEffect, useRef } from "react";
 import Typed from 'typed.js';
 import { Link } from 'react-scroll';
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -27,9 +30,16 @@ const Home = () => {
     };
   }, []);
 
+   useEffect(() => {
+      AOS.init({
+        duration: 1000,
+      })
+    })
+
+
   return (
     <div id="home" className="text-white">
-      <div className="max-w-[1000px] sm:max-w-[90%] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
+      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="800"  className="max-w-[1000px] sm:max-w-[90%] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
         <p className="text-gray-400 font-bold p-2 text-sm sm:text-base">
           WEB DEVELOPER & FULL STACK DEVELOPER
         </p>

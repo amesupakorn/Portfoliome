@@ -1,13 +1,22 @@
 import { FaCheckCircle } from 'react-icons/fa'; 
 import { HiMail } from 'react-icons/hi';
 import Timeline from './timeline';
-
+import AOS from "aos";
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    })
+  })
   return (
     <div id='about' className="text-white min-h-screen flex flex-col items-center justify-center px-4">
       <div className="max-w-[1200px] w-full grid lg:grid-cols-2 gap-12 items-center">
-        <div className="flex justify-center items-center relative">
+        <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" className="flex justify-center items-center relative">
         <div className="rounded-full overflow-hidden border-4 border-gray-700 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px]">
         <img
               src="/image/me.jpg"
@@ -42,7 +51,7 @@ const About = () => {
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500"  >
         <div className="flex flex-col">
             <p className="text-gray-400 text-sm uppercase tracking-wide mb-1">
                 About Me

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import tools from "../../data/tools"; // นำเข้าข้อมูล tools จากไฟล์แยก
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const Skill = () => {
 
@@ -14,9 +16,16 @@ const Skill = () => {
     return () => clearTimeout(timer);
   }, []);
 
+
+     useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        })
+      })
+
   return (
     <div id="skill" className="text-white py-12">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" className="max-w-[1200px] mx-auto px-4">
         <div className="flex flex-col">
           <p className="text-gray-400 text-sm uppercase tracking-wide mb-1">My Skills</p>
           <div className="w-10 h-[2px] bg-gray-600 mb-4"></div>

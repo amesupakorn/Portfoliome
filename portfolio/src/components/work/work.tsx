@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import projects from  "../../data/work"
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
 
 const Work = () => {
 
@@ -11,10 +14,15 @@ const Work = () => {
     return () => clearTimeout(timer);
   }, []);
 
+   useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        })
+      })
   return (
-    <div id="work" className="text-white py-12 px-4">
+    <div id="work" data-aos="fade-up"  data-aos-delay="50" data-aos-duration="800"  className="text-white py-12 px-4">
       {/* Section Header */}
-      <div className="max-w-[1200px] mx-auto mb-10">
+      <div   className="max-w-[1200px] mx-auto mb-10">
         <p className="text-blue-500 text-sm uppercase tracking-wider font-semibold mb-2">
           My Portfolio
         </p>
@@ -31,7 +39,7 @@ const Work = () => {
       </div>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
+      <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
         {isLoading
           ? Array(6)
               .fill(null)
