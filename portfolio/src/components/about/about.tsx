@@ -51,7 +51,7 @@ const About = () => {
           </div>
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500"  >
+        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000"  >
         <div className="flex flex-col">
             <p className="text-gray-400 text-sm uppercase tracking-wide mb-1">
                 About Me
@@ -114,10 +114,10 @@ const About = () => {
                     </div>
                 <p className="text-lg">supakorn642@gmail.com</p>
             </div>
-        </div>
-         
+        </div>         
         <Timeline />
         </div>
+
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const projects = [
         "MoviGo is a modern movie seat booking system built with Next.js and TMDB API, allowing users to browse movies, check showtimes, and book seats seamlessly. It features real-time seat selection, a responsive UI, and dynamic movie details powered by TMDB",
       link: "https://github.com/amesupakorn/MoviGo",
       image: "/work/movie.png",
-      tags: ["NextJs", "Prisma", "TailwindCSS", "PostgreSQL", "TMDB API"],
+      tags: ["NextJs", "Prisma", "TailwindCSS", "PostgreSQL", "TMDB API", "Stripe API", "Docker", "WebSocket"],
       rowSpan: "row-span-1",
     },
     {
@@ -55,7 +55,7 @@ const projects = [
       description:
         "A comprehensive hotel management system integrating frontend guest experience and backend hotel operations.",
       link: "https://github.com/amesupakorn/HYGEAS_HOTEL-web-",
-      image: "/work/hygeas.png",
+      image: "/work/hyge.png",
       tags: ["PHP", "Bootstrap", "MariaDB"],
       rowSpan: "row-span-1",
     },
