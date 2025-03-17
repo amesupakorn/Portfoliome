@@ -1,28 +1,32 @@
 import { useState, useEffect } from "react";
-import projects from  "../../data/work"
+import projects from "../../data/work";
 import AOS from "aos";
-import 'aos/dist/aos.css';
-
+import "aos/dist/aos.css";
 
 const Work = () => {
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading
-    const timer = setTimeout(() => setIsLoading(false), 1000);
+    const timer = setTimeout(() => setIsLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
-   useEffect(() => {
-        AOS.init({
-          duration: 1000,
-        })
-      })
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <div id="work" data-aos="fade-up"  data-aos-delay="50" data-aos-duration="800"  className="text-white py-12 px-4">
+    <div
+      id="work"
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="800"
+      className="text-white py-12 px-4"
+    >
       {/* Section Header */}
-      <div   className="max-w-[1200px] mx-auto mb-10">
+      <div className="max-w-[1200px] mx-auto mb-10">
         <p className="text-blue-500 text-sm uppercase tracking-wider font-semibold mb-2">
           My Portfolio
         </p>
@@ -39,30 +43,36 @@ const Work = () => {
       </div>
 
       {/* Project Grid */}
-      <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
         {isLoading
           ? Array(6)
               .fill(null)
               .map((_, index) => (
                 <div
                   key={index}
-                  className="bg-[#16181D] rounded-2xl p-4 shadow-md transition-shadow row-span-1 animate-pulse"
+                  className="bg-[#16181D] rounded-2xl p-4 shadow-md animate-pulse"
                 >
                   {/* Skeleton Tags */}
-                  <div className="flex flex-wrap gap-2 mb-3 max-w-full overflow-hidden">
+                  <div className="flex flex-wrap gap-2 mb-3">
                     <div className="h-4 w-16 bg-gray-700 rounded-full"></div>
                     <div className="h-4 w-20 bg-gray-700 rounded-full"></div>
                   </div>
 
-                  {/* Skeleton Title and Description */}
-                  <div className="h-5 bg-gray-700 rounded w-3/4 mb-2"></div>
-                  <div className="h-4 bg-gray-700 rounded w-full mb-4"></div>
+                  {/* Skeleton Title */}
+                  <div className="h-5 bg-gray-700 rounded w-3/4 mb-3"></div>
+
+                  {/* Skeleton Description */}
+                  <div className="space-y-2">
+                    <div className="h-4 bg-gray-700 rounded w-full"></div>
+                    <div className="h-4 bg-gray-700 rounded w-5/6"></div>
+                    <div className="h-4 bg-gray-700 rounded w-3/4"></div>
+                  </div>
 
                   {/* Skeleton Button */}
-                  <div className="h-4 bg-gray-700 rounded w-1/3 mb-4"></div>
+                  <div className="h-4 bg-gray-700 rounded w-1/3 mt-3"></div>
 
                   {/* Skeleton Image */}
-                  <div className="h-40 bg-gray-700 rounded-lg"></div>
+                  <div className="h-40 bg-gray-700 rounded-lg mt-4"></div>
                 </div>
               ))
           : projects.map((project) => (
@@ -71,7 +81,7 @@ const Work = () => {
                 className={`bg-[#16181D] rounded-2xl p-4 shadow-md hover:shadow-lg transition-shadow ${project.rowSpan} group`}
               >
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-3 max-w-full overflow-hidden">
+                <div className="flex flex-wrap gap-2 mb-3">
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
