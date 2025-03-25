@@ -1,8 +1,15 @@
 
 const projects = [
     {
-      id: 1,
-
+      title: "FlexiStock",
+      description:
+        "An intelligent warehouse management and website development system, designed with a microservices architecture to ensure flexibility and scalable performance",
+      link: "https://github.com/amesupakorn/FlexiStock",
+      image: "/work/flexistock.png",
+      tags: ["ReactJs", "NodeJS", "FastApi", "Prisma", "Prophet", "RabbitMQ","TailwindCSS", "PostgreSQL", "Google Map API"],
+      rowSpan: "row-span-1",
+    },
+    {
       title: "MoviGo",
       description:
         "MoviGo is a modern movie seat booking system built with Next.js and TMDB API, allowing users to browse movies, check showtimes, and book seats seamlessly. It features real-time seat selection, a responsive UI, and dynamic movie details powered by TMDB",
@@ -12,7 +19,6 @@ const projects = [
       rowSpan: "row-span-1",
     },
     {
-      id: 2,
       title: "WellCareConnect",
       description:
         "Chatbot Solutions for Preliminary Disease Assessment and Health Guidance powered by Google Cloud for scalable infrastructure. Docker containers streamline deployment, while Jenkins automates continuous integration and delivery, maintaining platform stability.",
@@ -30,17 +36,16 @@ const projects = [
       rowSpan: "row-span-1",
     },
     {
-      id: 3,
       title: "SuKaPab",
       description:
         "A one-stop e-commerce platform offering high-quality health products, from supplements to fitness gear, designed to support your journey to a healthier lifestyle with ease and confidence.",
       link: "https://github.com/amesupakorn/Talad-Sukkapab",
       image: "/work/group5.png",
-      tags: ["React", "NodeJS", "Prisma", "TailwindCSS", "PostgreSQL"],
+      tags: ["ReactJs", "NodeJS", "Prisma", "TailwindCSS", "PostgreSQL"],
       rowSpan: "row-span-1",
     },
+   
     {
-      id: 4,
       title: "OhYummy",
       description:
         "An all-in-one restaurant management website that integrates backend kitchen operations and frontend customer-facing solutions.",
@@ -50,7 +55,6 @@ const projects = [
       rowSpan: "row-span-1",
     },
     {
-      id: 5,
       title: "HyGeas Hotel",
       description:
         "A comprehensive hotel management system integrating frontend guest experience and backend hotel operations.",
@@ -60,7 +64,6 @@ const projects = [
       rowSpan: "row-span-1",
     },
     {
-        id: 6,
         title: "Teammusic",
         description:
           "Website Development for Audio Streaming Systems on Amazon Web Services (AWS)",
@@ -70,6 +73,7 @@ const projects = [
         rowSpan: "row-span-1",
       },
 
+    
 
     
 

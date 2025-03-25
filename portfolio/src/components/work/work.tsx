@@ -77,7 +77,6 @@ const Work = () => {
               ))
           : projects.map((project) => (
               <div
-                key={project.id}
                 className={`bg-[#16181D] rounded-2xl p-4 shadow-md hover:shadow-lg transition-shadow ${project.rowSpan} group`}
               >
                 {/* Tags */}
