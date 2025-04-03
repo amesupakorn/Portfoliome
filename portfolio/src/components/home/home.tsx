@@ -13,10 +13,8 @@ const Home = () => {
     const options = {
       strings: [
         "Full-Stack Web Development",
-        "CI/CD Pipelines",
         "Cloud Solutions",
         "Database Management",
-        "Modern UI/UX Design",
       ],
       typeSpeed: 80,
       backSpeed: 60,
@@ -26,7 +24,7 @@ const Home = () => {
     const typed = new Typed(typedRef.current, options);
 
     return () => {
-      typed.destroy(); // ล้าง instance ของ Typed เมื่อ component ถูก unmount
+      typed.destroy();
     };
   }, []);
 
@@ -57,8 +55,7 @@ const Home = () => {
         </div>
         <p className="md:text-2xl sm:text-xl text-lg font-bold text-gray-500 px-4 sm:px-0">
           I’m Supakorn, a passionate Full-Stack Web Developer with expertise in
-          building scalable web applications. I specialize in integrating
-          frontend, backend, and cloud-based solutions.
+          building scalable web applications
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 sm:space-y-0 space-y-4 mt-12">

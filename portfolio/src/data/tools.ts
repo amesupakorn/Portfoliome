@@ -2,7 +2,7 @@ const tools = [
     { name: "JavaScript", icon: "/logo/javascript.png", description: "Interaction" },
     { name: "TypeScript", icon: "/logo/typescript.png", description: "Interaction" },
     { name: "React", icon: "/logo/react.png", description: "Frontend Framework" },
-    { name: "NodeJS", icon: "/logo/nodejs.webp", description: "Backend Framework" },
+    { name: "NodeJS", icon: "/logo/nodejs2.webp", description: "Backend Framework" },
     { name: "NextJS", icon: "/logo/nextjs.png", description: "Full Stack Framework" },
     { name: "Django", icon: "/logo/django.jpg", description: "Full Stack Framework" },
     { name: "Python", icon: "/logo/python.png", description: "Web Development" },

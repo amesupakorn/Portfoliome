@@ -73,13 +73,10 @@ const About = () => {
               <FaCheckCircle className="mr-2" /> Website Development
             </p>
             <p className="flex items-center">
-              <FaCheckCircle className="mr-2" /> AI Development
+              <FaCheckCircle className="mr-2" /> AI Integration 
             </p>
             <p className="flex items-center mr-2">
               <FaCheckCircle className="mr-2" /> Database Management 
-            </p>
-            <p className="flex items-center mr-2">
-              <FaCheckCircle className="mr-2" /> DevOps | CI/CD Pipelines
             </p>
             <p className="flex items-center mr-2">
               <FaCheckCircle className="mr-2" /> Cloud Solutions Architect
