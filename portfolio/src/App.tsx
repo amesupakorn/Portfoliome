@@ -5,13 +5,15 @@ import About from './components/about/about.tsx';
 import Skill from './components/skill/skill.tsx';
 import Work from './components/work/work.tsx';
 import Contact from './components/contact/contact.tsx';
+import Experience from './components/experience/exper.tsx';
 export default function App() {
 
   return (
-    <div>
+    <div className='p-4'>
       <Navbar />
       <Home />
       <About />
+      <Experience />
       <Skill />
       <Work />
       <Contact />

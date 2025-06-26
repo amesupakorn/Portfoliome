@@ -17,15 +17,15 @@ const Timeline = () => {
     <div className="text-white py-6 px-1">
       <h2 className="text-2xl font-bold mb-5">Education</h2>
       <div className="relative">
-        <div className="absolute left-[15px] top-0 h-full w-[2px] bg-gray-600"></div>
         <div className="space-y-8">
+          <div className="absolute left-[15px] top-0 h-full w-[2px] bg-gradient-to-b from-blue-600 to-cyan-400"></div>
 
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-12">
-              <div className="absolute left-[8px] top-0 w-4 h-4 bg-blue-400 rounded-full"></div>
+              <div className="absolute left-[6px] top-2 w-5 h-5 rounded-full bg-blue-500 shadow-[0_0_10px_2px_rgba(59,130,246,0.8)]"></div>
 
               <div className="mb-4">
-                <div className="inline-block border border-gray-700 text-gray-300 px-4 py-1 text-sm rounded-full">
+                <div className="inline-block border bg-gradient-to-br from-zinc-800 to-gray-900  border-gray-700 text-gray-300 px-4 py-1 text-sm rounded-full">
                   {exp.date}
                 </div>
               </div>

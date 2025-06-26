@@ -87,8 +87,8 @@ const About = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row sm:space-x-4">
-          <div className="mt-8 p-2 w-72 rounded-full border border-gray-700 flex space-x-4">
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800">
+          <div className="mt-8 p-2 w-72 rounded-full border  bg-gradient-to-br from-zinc-900 to-gray-900 border-gray-700 flex space-x-4">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-zinc-800 to-gray-900">
                         <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -105,8 +105,8 @@ const About = () => {
                 <p className="text-lg">amesupakorn</p>
             </div>
 
-            <div className="mt-8 p-2 w-72 rounded-full border border-gray-700 flex space-x-4">
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800">
+            <div className="mt-8 p-2 w-72 rounded-full border bg-gradient-to-br from-zinc-900 to-gray-900 border-gray-700 flex space-x-4">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-zinc-800 to-gray-900">
                     <HiMail className="text-xl" />
                     </div>
                 <p className="text-lg">supakorn642@gmail.com</p>

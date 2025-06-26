@@ -62,22 +62,22 @@ const Work = () => {
           </a>
         </div>
         
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-3 mb-10">
-          {uniqueTags.map(tag => (
-            <button
-              key={tag}
-              onClick={() => setActiveFilter(tag)}
-              className={`px-4 py-2 rounded-full text-sm transition-all ${
-                activeFilter === tag 
-                  ? 'bg-blue-500 text-white font-medium' 
-                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
+          {/* Filter Tabs
+          <div className="flex flex-wrap gap-3 mb-10">
+            {uniqueTags.map(tag => (
+              <button
+                key={tag}
+                onClick={() => setActiveFilter(tag)}
+                className={`px-4 py-2 rounded-full text-sm transition-all ${
+                  activeFilter === tag 
+                    ? 'bg-blue-500 text-white font-medium' 
+                    : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+                }`}
+              >
+                {tag}
+              </button>
+            ))} */}
+        {/* </div> */}
       </div>
 
       {/* Project Grid */}
@@ -114,7 +114,7 @@ const Work = () => {
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
-                className={`bg-[#16181D] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ${
+                className={`bg-gradient-to-br from-zinc-900 to-gray-900  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ${
                   project.rowSpan || ''
                 } group cursor-pointer h-full flex flex-col`}
                 onClick={() => window.open(project.link, "_blank")}
@@ -124,7 +124,7 @@ const Work = () => {
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-colors"
+                      className="text-xs bg-gradient-to-br from-zinc-800 to-gray-900  text-gray-400 px-3 py-1 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-colors"
                     >
                       {tag}
                     </span>

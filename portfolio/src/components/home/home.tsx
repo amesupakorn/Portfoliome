@@ -59,11 +59,11 @@ const Home = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 sm:space-y-0 space-y-4 mt-12">
-          <button onClick={() => window.open('resume/resume.pdf', '_blank')} className="bg-white w-[200px] rounded-md font-medium py-3 text-black border border-white hover:text-white hover:bg-black transition duration-300">
+          <button onClick={() => window.open('resume/resume.pdf', '_blank')} className="bg-white w-[200px] rounded-md font-medium py-3 text-black border-2 border-white hover:text-white hover:bg-black transition duration-300">
             View Resume
           </button>
           <Link to="work" smooth={true} duration={500}>
-          <button className="w-[200px] rounded-md font-medium py-3 border border-white hover:bg-white hover:text-black transition duration-300">
+          <button className="w-[200px] rounded-md font-medium  py-3 border-2 border-white  hover:bg-white hover:text-black transition duration-300">
             
               My Work
 

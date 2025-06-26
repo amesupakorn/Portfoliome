@@ -7,10 +7,6 @@ import 'aos/dist/aos.css';
 const Skill = () => {
   const [showAll, setShowAll] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  
-  // Group tools by first letter for organization
-
-  
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const displayedTools = showAll ? tools : tools.slice(0, 8);
   
@@ -27,7 +23,7 @@ const Skill = () => {
   }, []);
   
   return (
-    <section id="skill" className="text-white py-16 bg-[#0e1016]">
+    <section id="skill" className="text-white py-16">
       <div 
         data-aos="fade-up" 
         data-aos-delay="50" 
@@ -73,9 +69,9 @@ const Skill = () => {
                     key={index}
                     data-aos="fade-up"
                     data-aos-delay={index * 50}
-                    className="flex items-center border border-gray-700 bg-[#16181D] rounded-2xl p-4 shadow-lg hover:shadow-xl hover:border-gray-600 transition-all group"
+                    className="flex items-center border bg-gradient-to-br from-zinc-800 to-gray-900  border-gray-700 bg-[#16181D] rounded-2xl p-2 shadow-lg hover:shadow-xl hover:border-gray-600 transition-all group"
                   >
-                    <div className="rounded-lg bg-gray-800 p-3 mr-4 group-hover:bg-blue-900/20 transition-colors">
+                    <div className="rounded-lg  bg-gradient-to-br from-zinc-900 to-gray-900 p-3 mr-4 group-hover:bg-blue-900/20 transition-colors">
                       <img
                         src={tool.icon}
                         alt={tool.name}
@@ -95,7 +91,7 @@ const Skill = () => {
           <div className="text-center mt-8">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-full transition-colors flex items-center justify-center mx-auto"
+              className="px-6 py-3 bg-gradient-to-br from-zinc-800 to-gray-900  hover:bg-gray-700 text-white rounded-full transition-colors flex items-center justify-center mx-auto"
             >
               {showAll ? (
                 <>
