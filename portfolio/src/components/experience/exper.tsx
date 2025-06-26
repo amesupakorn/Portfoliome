@@ -1,5 +1,3 @@
-import { FaCheckCircle } from 'react-icons/fa'; 
-import { HiMail } from 'react-icons/hi';
 import Timeline from './timeline';
 import AOS from "aos";
 import { useEffect } from 'react';
