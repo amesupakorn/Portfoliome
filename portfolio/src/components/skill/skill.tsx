@@ -23,7 +23,7 @@ const Skill = () => {
   }, []);
   
   return (
-    <section id="skill" className="text-white py-16">
+    <section id="skill" className="text-white mt-24">
       <div 
         data-aos="fade-up" 
         data-aos-delay="50" 

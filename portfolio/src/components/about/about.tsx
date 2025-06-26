@@ -14,7 +14,7 @@ const About = () => {
     })
   })
   return (
-    <div id='about' className="text-white min-h-screen flex flex-col items-center justify-center px-4">
+    <div id='about' className="text-white flex flex-col items-center justify-center px-4 mb-4">
       <div className="max-w-[1200px] w-full grid lg:grid-cols-2 gap-12 items-center">
         <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" className="flex justify-center items-center relative">
         <div className="rounded-full overflow-hidden border-4 border-gray-700 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px]">

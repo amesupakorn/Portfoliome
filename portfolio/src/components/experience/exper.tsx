@@ -12,7 +12,7 @@ const Experience = () => {
     })
   })
   return (
-    <div id='about' className="text-white min-h-screen flex flex-col items-center justify-center px-4">
+    <div id='about' className="text-white flex flex-col items-center justify-center px-4">
       <div className="max-w-[1200px] w-full items-center">
         <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000"  >
             <div className="flex flex-col">

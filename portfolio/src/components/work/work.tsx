@@ -26,7 +26,7 @@ const Work = () => {
       data-aos="fade-up"
       data-aos-delay="50"
       data-aos-duration="800"
-      className="text-white py-16 px-4"
+      className="text-white mt-24 px-4"
     >
       {/* Section Header */}
       <div className="max-w-6xl mx-auto mb-12">
