@@ -26,8 +26,9 @@ jobs:
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           GITHUB_SHA: ${{ github.sha }}
+        # Use quotes around image tags to prevent issues with special chars in SHA
         run: |
-          docker build -t %DOCKERHUB_USERNAME%/portfolio:%GITHUB_SHA% -t %DOCKERHUB_USERNAME%/portfolio:latest .
+          docker build -t "%DOCKERHUB_USERNAME%/portfolio:%GITHUB_SHA%" -t "%DOCKERHUB_USERNAME%/portfolio:latest" .
 
       - name: Push Docker image
         env:
