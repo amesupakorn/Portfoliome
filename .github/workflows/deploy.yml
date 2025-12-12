@@ -20,9 +20,10 @@ jobs:
           $token | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Build Docker image
-        shell: powershell
+        working-directory: portfolio
         run: |
-          docker build -t "${{ secrets.DOCKERHUB_USERNAME }}/portfolio:${{ github.sha }}" -t "${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest" .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:${{ github.sha }} \
+                       -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest .
 
       - name: Push Docker image
         shell: powershell
