@@ -4,35 +4,43 @@ on:
   push:
     branches: ["main"]
 
+defaults:
+  run:
+    shell: cmd
+
 jobs:
   build-and-deploy:
     runs-on: self-hosted
-    environment: Production
-    
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Login to Docker Hub
-        shell: powershell
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
-          $token = "${{ secrets.DOCKERHUB_TOKEN }}"
-          $token | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+          echo %DOCKERHUB_TOKEN% | docker login -u %DOCKERHUB_USERNAME% --password-stdin
 
       - name: Build Docker image
-        working-directory: portfolio
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          GITHUB_SHA: ${{ github.sha }}
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:${{ github.sha }} \
-                       -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest .
+          docker build -t %DOCKERHUB_USERNAME%/portfolio:%GITHUB_SHA% -t %DOCKERHUB_USERNAME%/portfolio:latest .
 
       - name: Push Docker image
-        shell: powershell
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          GITHUB_SHA: ${{ github.sha }}
         run: |
-          docker push "${{ secrets.DOCKERHUB_USERNAME }}/portfolio:${{ github.sha }}"
-          docker push "${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest"
+          docker push %DOCKERHUB_USERNAME%/portfolio:%GITHUB_SHA%
+          docker push %DOCKERHUB_USERNAME%/portfolio:latest
 
       - name: Deploy to Kubernetes
-        shell: powershell
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          GITHUB_SHA: ${{ github.sha }}
         run: |
-          kubectl set image deployment/portfolio "portfolio=${{ secrets.DOCKERHUB_USERNAME }}/portfolio:${{ github.sha }}"
+          kubectl set image deployment/portfolio portfolio=%DOCKERHUB_USERNAME%/portfolio:%GITHUB_SHA%
           kubectl rollout status deployment/portfolio
