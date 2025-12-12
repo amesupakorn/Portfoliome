@@ -26,6 +26,7 @@ jobs:
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           GITHUB_SHA: ${{ github.sha }}
+        working-directory: ./portfolio
         run: |
           docker build -t "%DOCKERHUB_USERNAME%/portfolio:%GITHUB_SHA%" -t "%DOCKERHUB_USERNAME%/portfolio:latest" .
 
