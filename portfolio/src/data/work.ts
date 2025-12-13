@@ -1,5 +1,24 @@
 
 const projects = [
+      {
+      title: "FaceDepScan",
+      description:
+        "A facial behavior analysis system for depression screening using deep learning models. It combines ConvNeXt-Tiny feature extraction, Action Unit (AU) facial features, and temporal sequence modeling (LSTM + Attention) to improve emotion classification and aid in detecting depressive behavior from facial video data.",
+      link: "https://github.com/amesupakorn/FaceDepScan",
+      image: "/work/face.png",
+      tags: [
+        "TypeScript",
+        "FastAPI",
+        "NextJs",
+        "Machine Learning",
+        "Deep Learning",
+        "ConvNeXt",
+        "LSTM",
+        "Attention",
+        "Facial Action Coding System (FACS)"
+      ],
+      rowSpan: "row-span-1"
+    },
     {
       title: "FlexiStock",
       description:
