@@ -6,6 +6,8 @@ import Skill from './components/skill/skill.tsx';
 import Work from './components/work/work.tsx';
 import Contact from './components/contact/contact.tsx';
 import Experience from './components/experience/exper.tsx';
+import Certificates from './components/certificate/certificate.tsx';
+
 export default function App() {
 
   return (
@@ -14,6 +16,7 @@ export default function App() {
       <Home />
       <About />
       <Experience />
+      <Certificates />
       <Skill />
       <Work />
       <Contact />

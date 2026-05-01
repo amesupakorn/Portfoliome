@@ -1,101 +1,118 @@
 
 const projects = [
-      {
-      title: "FaceDepScan",
-      description:
-        "A facial behavior analysis system for depression screening using deep learning models. It combines ConvNeXt-Tiny feature extraction, Action Unit (AU) facial features, and temporal sequence modeling (LSTM + Attention) to improve emotion classification and aid in detecting depressive behavior from facial video data.",
-      link: "https://github.com/amesupakorn/FaceDepScan",
-      image: "/work/face.png",
-      tags: [
-        "TypeScript",
-        "FastAPI",
-        "NextJs",
-        "Machine Learning",
-        "Deep Learning",
-        "ConvNeXt",
-        "LSTM",
-        "Attention",
-        "Facial Action Coding System (FACS)"
-      ],
-      rowSpan: "row-span-1"
-    },
-    {
-      title: "FlexiStock",
-      description:
-        "An intelligent warehouse management and website development system, designed with a microservices architecture to ensure flexibility and scalable performance",
-      link: "https://github.com/amesupakorn/FlexiStock",
-      image: "/work/flexistock.png",
-      tags: ["ReactJs", "NodeJS", "FastApi", "Prisma", "Prophet", "RabbitMQ","TailwindCSS", "PostgreSQL", "Google Map API"],
-      rowSpan: "row-span-1",
-    },
-    {
-      title: "MoviGo",
-      description:
-        "MoviGo is a modern movie seat booking system built with Next.js and TMDB API, allowing users to browse movies, check showtimes, and book seats seamlessly. It features real-time seat selection, a responsive UI, and dynamic movie details powered by TMDB",
-      link: "https://github.com/amesupakorn/MoviGo",
-      image: "/work/movie2.png",
-      tags: ["NextJs", "Prisma", "TailwindCSS", "PostgreSQL", "TMDB API", "Stripe API", "Docker", "WebSocket"],
-      rowSpan: "row-span-1",
-    },
-    {
-      title: "WellCareConnect",
-      description:
-        "Chatbot Solutions for Preliminary Disease Assessment and Health Guidance powered by Google Cloud for scalable infrastructure. Docker containers streamline deployment, while Jenkins automates continuous integration and delivery, maintaining platform stability.",
-      link: "https://github.com/amesupakorn/WellCareConnect",
-      image: "/work/group2.png",
-      tags: [
-        "Django",
-        "TailwindCSS",
-        "Dialogflow",
-        "Google Cloud",
-        "Docker",
-        "Jenkins",
-        "PostgreSQL",
-      ],
-      rowSpan: "row-span-1",
-    },
-    {
-      title: "SuKaPab",
-      description:
-        "A one-stop e-commerce platform offering high-quality health products, from supplements to fitness gear, designed to support your journey to a healthier lifestyle with ease and confidence.",
-      link: "https://github.com/amesupakorn/Talad-Sukkapab",
-      image: "/work/group5.png",
-      tags: ["ReactJs", "NodeJS", "Prisma", "TailwindCSS", "PostgreSQL"],
-      rowSpan: "row-span-1",
-    },
-   
-    {
-      title: "OhYummy",
-      description:
-        "An all-in-one restaurant management website that integrates backend kitchen operations and frontend customer-facing solutions.",
-      link: "https://github.com/amesupakorn/OhYummy",
-      image: "/work/group4.png",
-      tags: ["PHP", "Bootstrap", "MariaDB"],
-      rowSpan: "row-span-1",
-    },
-    {
-      title: "HyGeas Hotel",
-      description:
-        "A comprehensive hotel management system integrating frontend guest experience and backend hotel operations.",
-      link: "https://github.com/amesupakorn/HYGEAS_HOTEL-web-",
-      image: "/work/hyge.png",
-      tags: ["PHP", "Bootstrap", "MariaDB"],
-      rowSpan: "row-span-1",
-    },
-    {
-        title: "Teammusic",
-        description:
-          "Website Development for Audio Streaming Systems on Amazon Web Services (AWS)",
-        link: "https://github.com/amesupakorn/TM_Teammusic",
-        image: "/work/tm.png",
-        tags: ["Django", "TailwindCSS", "Amazon Web Services", "PostgreSQL"],
-        rowSpan: "row-span-1",
-      },
+  {
+    title: "OSGED (Cognitive & Depression Assessment Platform) | Senior Project",
+    description:
+      "Developed an end-to-end clinical web application designed for senior citizens to self-assess cognitive health and screen for depressive behaviors. Integrated advanced deep learning models (ConvNeXt, LSTM, Attention) for real-time emotion classification and partnered with hospitals for UAT with 100+ elderly residents to optimize UX.",
+    link: "https://osged.online",
+    github: "https://github.com/amesupakorn/OSGED_WEB",
+    image: "/work/osged.png",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "FastAPI",
+      "PostgreSQL",
+      "Deep Learning",
+      "ConvNeXt",
+      "LSTM",
+      "Attention",
+      "Docker",
+      "GCP",
+    ],
+    rowSpan: "row-span-1",
+  },
+  {
+    title: "FaceDepScan",
+    description:
+      "A facial behavior analysis system for depression screening using deep learning models. It combines ConvNeXt-Tiny feature extraction, Action Unit (AU) facial features, and temporal sequence modeling (LSTM + Attention) to improve emotion classification and aid in detecting depressive behavior from facial video data.",
+    github: "https://github.com/amesupakorn/FaceDepScan",
+    image: "/work/face.png",
+    tags: [
+      "TypeScript",
+      "FastAPI",
+      "NextJs",
+      "Machine Learning",
+      "Deep Learning",
+      "ConvNeXt",
+      "LSTM",
+      "Attention",
+      "Facial Action Coding System (FACS)"
+    ],
+    rowSpan: "row-span-1"
+  },
+  {
+    title: "FlexiStock",
+    description:
+      "An intelligent warehouse management and website development system, designed with a microservices architecture to ensure flexibility and scalable performance",
+    github: "https://github.com/amesupakorn/FlexiStock",
+    image: "/work/flexistock.png",
+    tags: ["ReactJs", "NodeJS", "FastApi", "Prisma", "Prophet", "RabbitMQ", "TailwindCSS", "PostgreSQL", "Google Map API"],
+    rowSpan: "row-span-1",
+  },
+  {
+    title: "MoviGo",
+    description:
+      "MoviGo is a modern movie seat booking system built with Next.js and TMDB API, allowing users to browse movies, check showtimes, and book seats seamlessly. It features real-time seat selection, a responsive UI, and dynamic movie details powered by TMDB",
+    link: "https://movi-go-lyart.vercel.app/client/home",
+    github: "https://github.com/amesupakorn/MoviGo",
+    image: "/work/movie2.png",
+    tags: ["NextJs", "Prisma", "TailwindCSS", "PostgreSQL", "TMDB API", "Stripe API", "Docker", "WebSocket"],
+    rowSpan: "row-span-1",
+  },
+  {
+    title: "WellCareConnect",
+    description:
+      "Chatbot Solutions for Preliminary Disease Assessment and Health Guidance powered by Google Cloud for scalable infrastructure. Docker containers streamline deployment, while Jenkins automates continuous integration and delivery, maintaining platform stability.",
+    link: "https://wellcare-web-69356450208.asia-southeast1.run.app",
+    github: "https://github.com/amesupakorn/WellCareConnect",
+    image: "/work/group2.png",
+    tags: [
+      "Django",
+      "TailwindCSS",
+      "Dialogflow",
+      "Google Cloud",
+      "Docker",
+      "Jenkins",
+      "PostgreSQL",
+    ],
+    rowSpan: "row-span-1",
+  },
+  {
+    title: "SuKaPab",
+    description:
+      "A one-stop e-commerce platform offering high-quality health products, from supplements to fitness gear, designed to support your journey to a healthier lifestyle with ease and confidence.",
+    github: "https://github.com/amesupakorn/Talad-Sukkapab",
+    image: "/work/group5.png",
+    tags: ["ReactJs", "NodeJS", "Prisma", "TailwindCSS", "PostgreSQL"],
+    rowSpan: "row-span-1",
+  },
+  {
+    title: "OhYummy",
+    description:
+      "An all-in-one restaurant management website that integrates backend kitchen operations and frontend customer-facing solutions.",
+    github: "https://github.com/amesupakorn/OhYummy",
+    image: "/work/group4.png",
+    tags: ["PHP", "Bootstrap", "MariaDB"],
+    rowSpan: "row-span-1",
+  },
+  {
+    title: "HyGeas Hotel",
+    description:
+      "A comprehensive hotel management system integrating frontend guest experience and backend hotel operations.",
+    github: "https://github.com/amesupakorn/HYGEAS_HOTEL-web-",
+    image: "/work/hyge.png",
+    tags: ["PHP", "Bootstrap", "MariaDB"],
+    rowSpan: "row-span-1",
+  },
+  {
+    title: "Teammusic",
+    description:
+      "Website Development for Audio Streaming Systems on Amazon Web Services (AWS)",
+    github: "https://github.com/amesupakorn/TM_Teammusic",
+    image: "/work/tm.png",
+    tags: ["Django", "TailwindCSS", "Amazon Web Services", "PostgreSQL"],
+    rowSpan: "row-span-1",
+  },
+];
 
-    
-
-    
-
-  ];
-
-  export default projects;
+export default projects;

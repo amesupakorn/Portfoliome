@@ -3,7 +3,7 @@ import { Code } from 'lucide-react';
 const Timeline = () => {
   const experiences = [
     {
-      date: 'Apr 2025 – Jun 2025',
+      date: 'Apr 2025 – Oct 2025',
       position: 'Full-stack Developer (Intern)',
       company: 'tohome.com',
       logo: '/tohome.png',
@@ -16,7 +16,7 @@ const Timeline = () => {
         'Built backend APIs with RabbitMQ for asynchronous task handling under high loads',
         'Integrated an AI-powered article generation pipeline using LLMs for scalable SEO content'
       ],
-      tech: ['TypeScript', 'Next.js', 'NodeJs','RabbitMQ', 'AI APIs', 'CMS']
+      tech: ['TypeScript', 'Next.js', 'NodeJs', 'RabbitMQ', 'AI APIs', 'CMS']
     },
   ];
 
@@ -27,7 +27,7 @@ const Timeline = () => {
         {/* Vertical Line */}
         <div className="absolute left-[20px] top-0 h-full w-[2px] bg-gradient-to-b from-blue-600 to-cyan-400"></div>
 
-       <div className="space-y-14">
+        <div className="space-y-14">
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-14">
               {/* Glowing Dot */}

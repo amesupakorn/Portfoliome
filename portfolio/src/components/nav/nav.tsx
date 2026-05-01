@@ -39,6 +39,11 @@ const Navbar = () => {
           What I do
         </Link>
       </li>
+      <li className="p-4 cursor-pointer hover:text-blue-500 transition">
+        <Link to="certificates" smooth={true} duration={500}>
+          Certificates
+        </Link>
+      </li>
       <div className="flex items-center space-x-4">
           <div className="w-[1px] h-6 bg-gray-600"></div>
 
@@ -106,6 +111,11 @@ const Navbar = () => {
             <li className="p-4 cursor-pointer hover:text-blue-500 transition">
               <Link to="work" smooth={true} duration={500}>
                 What I do
+              </Link>
+            </li>
+            <li className="p-4 cursor-pointer hover:text-blue-500 transition">
+              <Link to="certificates" smooth={true} duration={500}>
+                Certificates
               </Link>
             </li>
 
