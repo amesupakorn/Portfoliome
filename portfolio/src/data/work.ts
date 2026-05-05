@@ -44,6 +44,7 @@ const projects = [
     title: "FlexiStock",
     description:
       "An intelligent warehouse management and website development system, designed with a microservices architecture to ensure flexibility and scalable performance",
+    link: "https://flexistock-web-69356450208.asia-southeast1.run.app/inventory",
     github: "https://github.com/amesupakorn/FlexiStock",
     image: "/work/flexistock.png",
     tags: ["ReactJs", "NodeJS", "FastApi", "Prisma", "Prophet", "RabbitMQ", "TailwindCSS", "PostgreSQL", "Google Map API"],
