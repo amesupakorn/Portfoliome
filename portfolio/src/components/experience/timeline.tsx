@@ -3,6 +3,20 @@ import { Code } from 'lucide-react';
 const Timeline = () => {
   const experiences = [
     {
+      date: 'May 2026 – Sep 2026',
+      position: 'ERP Implementation Developer',
+      company: 'Dynamics motion',
+      logo: '/dynamic.png',
+      website: '',
+      description: [
+        'Odoo ERP Implementation: Collaborated with consultants and clients to analyze business requirements and deliver solutions across Odoo modules.',
+        'Solution Development: Translated business requirements and workflows into customized ERP solutions, supporting processes from CRM and customer management through order fulfillment and delivery.',
+        'System Integration & Development: Developed and customized Odoo functionality to align with business processes and implementation requirements.',
+        'Client Collaboration: Participated in client meetings, requirement discussions, solution planning, testing, and issue resolution throughout the implementation lifecycle.',
+      ],
+      tech: ['Python', 'Odoo']
+    },
+    {
       date: 'Apr 2025 – Oct 2025',
       position: 'Full-stack Developer (Intern)',
       company: 'tohome.com',
@@ -18,6 +32,7 @@ const Timeline = () => {
       ],
       tech: ['TypeScript', 'Next.js', 'NodeJs', 'RabbitMQ', 'AI APIs', 'CMS']
     },
+
   ];
 
   return (
