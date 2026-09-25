@@ -2,7 +2,7 @@
 const Timeline = () => {
   const experiences = [
     {
-      date: '2022 - Present',
+      date: '2022 - 2026',
       position: "King Mongkut's Institute of Technology Ladkrabang",
       description: 'School of Information Technology Subject Area Software Engineering',
     },
